@@ -10,80 +10,109 @@
         margin: 0;
         box-sizing: border-box;
       }
-      .container{
-        margin: 20px auto;
-        width: 30vw;
-        height: 90vh;
-        border: 2px solid rgb(57, 57, 57);
-        border-radius:40px;
+      .nav{
+        background-color: #00d4fa;
+        height: 73px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
       }
-      .img-container{
-        height: 55%;
-        padding: 10px;
+      .nav ul{
+        height: 73px;
+      }
+
+      .nav ul li{
+        display: inline-block;
+        margin: 15px 67px;
+        font-size: 2em;
+        list-style: none;
+      }
+      .content-section{
+        position: relative;
+        background-color: rgb(234, 240, 241);
+        height: 70vh;
+      }
+      .content-section .first-content-box{
+        position: absolute;
+        left: 0px;
+        background-color: rgb(202, 220, 237);
+        width: 48%;
+        margin: 10px;
+        padding: 5px;
+        max-height: 500px;
         overflow: hidden;
-
-         img{
-          border-radius: 20px;
-          display: block;
-          width: 100%;
-          max-height:400px;
-         }
-
-        .link{
-          padding: 20px;
-
-           a{
-             margin: 0 5px;
-             font-size: 1.8em;
-             border: 1px solid grey;
-             border-radius: 20px;
-             padding: 2px 20px;
-             text-decoration: none;
-             color: grey;
-           }
-        }
-        
       }
-      .text-container{
-        height:45%;
-        padding: 10px;
-
-          h1{
-          margin-bottom: 10px;
-          color: rgb(136, 131, 131);
-          }
-          p{
-          font-size: 1.6em;
-          margin: 15px 0;
-          }
-          a{
-          margin: 110px;
-          padding: 8px;
-          border: 1px solid black;
-          border-radius: 50px;
-          font-size:1.5em ;
-          text-decoration: none;
-          color: #3838ba;
-          background-color: rgb(148, 148, 177);
-          }
+      .content-section .secound-content-box{
+        position: absolute;
+        right: 0px;
+        background-color: rgb(202, 220, 237);
+        width: 48%;
+        margin: 10px;
+        padding: 5px;
+        max-height: 500px;
+        overflow: hidden;
       }
+      .welcome-section{
+        border: 2px solid black;
+        border-radius: 100px;
+        height: 300px;
+        margin: 100px;
+        box-shadow: -13px 14px 20px 0px;
+
+      }
+      .welcome-section h3{
+       text-align: center;
+       margin: 112px 0;
+       font-size: 4em;
+       color: #00d4fa;
+      }
+      .footer{
+        background-color: #00d4fa;
+        height: 100px;
+        text-align: center;
+      }
+      .footer p{
+        padding: 31px 0;
+
+      }
+      .logo{
+        position: fixed;
+        right: 20px;
+        top: 600px;
+        z-index: 2;
+        display: inline-block;
+      }
+      
+      
+ 
     </style>
   </head>
-  <div class="container">
-    <div class="img-container">
-      <img src="./IMG_1.JPG" alt="my-img" width="100">
-      <div class="link">
-        <a href="#">lorem</a>
-        <a href="#">lorem</a>
+  <body>
+    <div class="logo"><img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/chat.png" alt="chat"/></div>
+    <div class="nav">
+      <ul>
+        <li>home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <div class="content-section">
+        <div class="first-content-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius enim fugit voluptatibus, odit inventore dolores laboriosam explicabo quibusdam iure tempora quisquam voluptatem asperiores ab officiis optio necessitatibus facilis velit ducimus impedit, culpa porro. Saepe aliquam repellat dolorem consequuntur ullam, vero odio tempora architecto accusantium quod. Pariatur error laborum consectetur dignissimos sint? Fuga, explicabo nobis? Dolores, suscipit. Accusantium magni minus debitis quis ipsa alias voluptatem ratione inventore provident nemo beatae molestiae eligendi porro enim dolorum autem cupiditate expedita ad dolore, libero quia? At vero excepturi ad. Incidunt, quisquam! Sunt officiis, cupiditate quidem laudantium commodi labore, magnam quasi quo esse perspiciatis sit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis corporis cumque rerum, aliquam aspernatur quaerat. Quae rem ipsam tempora consequatur officia blanditiis. Voluptatem beatae iste id ullam incidunt voluptatibus nisi ab distinctio impedit enim dolores modi ipsam provident vero sed voluptates alias non sit, blanditiis vel obcaecati, quisquam cupiditate. Rem similique magni ullam sequi! Impedit similique aspernatur repellendus non repellat quidem veniam placeat, quaerat incidunt itaque autem? Distinctio eligendi, aliquid saepe impedit, perspiciatis cum error consequuntur id dicta quae ratione magnam quis illo similique maxime. Inventore obcaecati voluptate, nesciunt magni et quidem ipsum beatae pariatur eius debitis iste ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, consectetur laborum voluptas aliquid esse exercitationem quod asperiores sunt! Maxime aliquid autem unde aperiam quaerat rem ab ipsa, saepe iure consectetur vel quo aliquam, et corrupti totam ad? Esse assumenda quas dolores alias error! Blanditiis obcaecati vitae fugit consequuntur. Doloribus, similique.</p>
+        </div>
+        <div class="secound-content-box">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur quaerat, cum mollitia omnis, consequuntur totam impedit placeat eum sint ipsa, laudantium optio accusantium minus. Modi pariatur repellat molestias placeat perspiciatis laborum explicabo consequuntur nulla, enim in facilis nostrum? Aperiam nihil error fugit alias officia esse est modi minima beatae maxime, eveniet expedita voluptatibus. Ut explicabo excepturi recusandae accusantium doloremque quaerat culpa saepe, iste minus ducimus. Ea quae, beatae deserunt minus alias dolorum, iure dolores maxime praesentium accusantium placeat quis voluptate laboriosam, rem doloremque. Accusantium ipsum, aliquid nesciunt eius beatae neque sed, quis magnam, vero expedita reprehenderit nemo quia incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet accusantium hic dolor praesentium harum nobis similique temporibus velit quae in! Tempora soluta molestias voluptas iure aliquid exercitationem fuga ipsa autem voluptatum ad, beatae unde ex laboriosam mollitia nesciunt ullam cumque doloribus odit necessitatibus obcaecati atque explicabo pariatur. Ab sed fugiat beatae temporibus accusamus nihil dignissimos laboriosam corrupti odio labore, debitis esse optio officia! Aspernatur cum, debitis error omnis tempore iusto. Obcaecati, officiis. Blanditiis fuga dolore debitis, rerum ea architecto suscipit! Molestiae corporis at voluptatibus iusto sequi laborum rerum nihil nostrum! Autem obcaecati vel corrupti voluptate deserunt quam, perspiciatis est dignissimos architecto ab iusto. Ea earum necessitatibus ipsum, nam molestias, libero dicta repellendus enim accusamus, laboriosam asperiores natus aut? Corrupti, optio necessitatibus. Eos nulla eum ut itaque accusantium molestias non dolorem delectus nostrum aliquid amet, at esse numquam quae veritatis! Nam obcaecati consectetur ut, tempora impedit eius reprehenderit voluptates veniam voluptatum.</p>
+        </div>
+
+      </div>
+      <div class="welcome-section">
+        <h3>welcome to my website </h3>
       </div>
     </div>
-    <div class="text-container">
-      <h1>Lago di braises</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus, distinctio fuga esse incidunt repellat culpa ratione placeat.</p>
-      <a href="#">Read more</a>
-
+    <div class="footer">
+      <p>&copy; 2025 Your Website Name. All Rights Reserved.</p>
     </div>
-  </div>
-
   </body>
 </html>
