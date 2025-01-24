@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 20px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .parent{
+      border: 2px solid black;
+      height: 100vh;
+      display: grid;
+      grid-template-areas: "nav nav nav nav"
+                           "aside main main main"
+                           "aside main main main"
+                            "aside main main main"
+                             "aside main main main"
+                           "aside article article article"
+                           "footer footer footer footer";
+    }
+    .child{
+      border: 2px solid black;
+    }
+    .nav{
+      background-color: aqua;
+      grid-area: nav;
+    }
+    .aside{
+      background-color: rgb(75, 159, 198);
+      grid-area: aside;
+    }
+    .main{
+      background-color: rgb(165, 226, 206);
+      grid-area: main;
+      height: 475px;
+    }
+    .article{
+      background-color: rgb(9, 230, 156);
+      grid-area: article;
+    }
+    .footer{
+      background-color: rgb(51, 155, 121);
+      grid-area: footer;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child nav">1</div>
+    <div class="child aside">2</div>
+    <div class="child main">3</div>
+    <div class="child article">4</div>
+    <div class="child footer">5</div>
+  </div>
+</body>
+</html>
