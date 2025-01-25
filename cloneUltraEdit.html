@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Learning nav </title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      
+    }
+    body{
+      font-family:'Segoe UI';
+    }
+    header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 15vh;
+    }
+    header nav ul{
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      list-style: none;
+    }
+    header nav ul li{
+      cursor: pointer;
+    }
+
+    /*------------------------------------------------------------------------*/
+    main{
+      justify-content: center;
+      height: 85vh;
+      display: grid;
+      grid-template-areas: "article article article"
+                            "article article article"
+                            "article article article"
+                            "ver ver ver"
+                            "ver ver ver"
+                            "dld dld dld"
+                            "dld dld dld"
+                            "dld dld dld"
+                            "dld dld dld";
+    }
+    .first-sec{
+      grid-area: article;
+      gap: 30px;
+    }
+    .secound-sec{
+      grid-area: ver;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .third-sec{
+      grid-area: dld;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .flex-row{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .first-sec h2{
+      font-weight: 300;
+      font-size: 2em;
+    }
+    .first-sec h3{
+      max-width: 45vw;
+      text-align: center;
+      font-weight: 300;
+    }
+    .first-sec .btn{
+      background-color: rgb(5, 195, 195);
+      border: none;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .secound-sec h3{
+      font-family: 'Segoe UI';
+      font-weight: 200;
+      font-size: 1em;
+    }
+    .secound-sec h3 span{
+      font-size: 0.6em;
+      font-weight: 300;
+    }
+
+    .third-sec .download-box{
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      background-color: #f9f9f9;
+      max-width: 13vw;
+      border-radius: 20px;
+    }
+    .third-sec .download-box h3{
+      font-family: 'Segoe UI';
+      font-weight: 800;
+      font-size: 1em;
+    }
+    .third-sec .download-box button{
+      background-color: #5cb85c;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .third-sec .download-box h5{
+      font-weight: 300;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="#"><img src="	https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="ultra-edit-logo"></a></div>
+    <nav>
+      <ul>
+        <li>Products <i class="fa-solid fa-angle-down"></i></li>
+        <li>For business <i class="fa-solid fa-angle-down"></i></li>
+        <li>Resources <i class="fa-solid fa-angle-down"></i></li>
+        <li>Support <i class="fa-solid fa-angle-down"></i></li>
+        <li>Our company <i class="fa-solid fa-angle-down"></i></li>
+        <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="logo-trans"></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="first-sec flex-row">
+      <h2>Download <strong>Ultraedit</strong> for windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="logo"></h2>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eius tempore expedita labore voluptates voluptate repudiandae tempora, velit corporis? </h3>
+      <button class="btn">Download Mac or Linux version</button>
+    </section>
+    <section class="secound-sec">
+      <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt="Ultra-edit-logo" width="60">
+      <h3>Download UltraEdit <span>v2023.1(released 08/16/2023)|hotfix</span></h3>
+    </section>
+    <section class="third-sec">
+      <div class="download-box flex-row">
+        <h3>English</h3>
+        <button>Download 64bit</button>
+      </div>
+      <div class="download-box flex-row">
+        <h3>Deutsch</h3>
+        <h5>German</h5>
+        <button>Download 64bit</button>
+      </div>
+      <div class="download-box flex-row">
+        <h3>Italiano</h3>
+        <h5>Italian</h5>
+        <button>Download 64bit</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
