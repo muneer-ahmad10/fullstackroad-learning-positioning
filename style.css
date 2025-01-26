@@ -1,0 +1,300 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family:sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+header nav ul{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  list-style: none;
+}
+header nav ul li{
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------*/
+main{
+  justify-content: center;
+  height: 85vh;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "article article article"
+                        "article article article"
+                        "article article article"
+                        "ver ver ver"
+                        "ver ver ver"
+                        "dld dld dld"
+                        "dld dld dld"
+                        "dld dld dld"
+                        "dld dld dld"
+                        "news news news"
+                        "news news news"
+                        "news news news"
+                        "news news news"
+                        "news news news"
+                        "news news news"
+                        "ftr ftr ftr"
+                        "ftr ftr ftr"
+                        "ftr ftr ftr"
+                        "ftr ftr ftr"
+                        "ftr ftr ftr"
+                        "ftr ftr ftr";
+
+}
+.first-sec{
+  grid-area: article;
+  gap: 30px;
+  margin: 50px;
+}
+.secound-sec{
+  grid-area: ver;
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+  gap: 20px;
+}
+.third-sec{
+  grid-area: dld;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.fifth-sec{
+  grid-area: ftr;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.first-sec h2{
+  font-weight: 300;
+  font-size: 2.5em;
+}
+.first-sec h3{
+  max-width: 48vw;
+  text-align: center;
+  font-weight: 300;
+}
+.first-sec .btn{
+  background-color: rgb(5, 195, 195);
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.secound-sec h3{
+  font-weight: 200;
+  font-size: 1.3em;
+}
+.secound-sec h3 span{
+  font-size: 0.6em;
+  font-weight: 300;
+}
+.download-card{
+  background-color: #f9f9f9;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 6px;
+}
+.third-sec .btn{
+  background-color: #5cb85c;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.fourth-sec{
+  grid-area: news;
+  background-color: #222!important;
+  width: 100vw;
+  color: #f9f9f9;
+  display: grid;
+  grid-template-areas: "con con con con form form form form"
+                      "con con con con form form form form"
+                      "con con con con form form form form"
+                      "con con con con form form form form"
+                      "txt txt txt txt txt txt txt txt"
+                      "txt txt txt txt txt txt txt txt"
+                      "txt txt txt txt txt txt txt txt"
+                      "txt txt txt txt txt txt txt txt";
+
+  gap: 40px;
+  justify-content: center;
+   align-items: center;
+}
+.fourth-sec .news-form{
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  width: 359px;
+  height: 270px;
+  gap: 40px;
+}
+.fourth-sec .news-form h3{
+  color: #4daaf2!important;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.fourth-sec .news-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.text-news{
+  grid-area: con;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.text-news h3{
+  font-size: 1.5em;
+  font-weight: 700;
+ 
+}
+.text-news h4{
+  max-width: 494px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+}
+.news-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: form;
+}
+
+.fourth-sec .news-form form label{
+  font-weight: 300;
+  font-size: 0.9em;
+}
+#e-mail{
+  width: 280px;
+  height: 50px;
+  border: 1px solid #4f4f4f;
+  font-size: 1.3em;
+  padding: 5px;
+  color: #4f4f4f;
+}
+#sign-up-btn{
+  width: 280px;
+  height: 50px;
+  border: none;
+  font-size: 1em;
+  font-weight: 800;
+  padding: 5px;
+  background-color: #4daaf2!important;
+  color: white;
+  /* box-shadow:#4daaf2  2px 2px 20px 0px; */
+}
+.exe{
+  grid-area: txt;
+  display: flex;
+  flex-direction: column;
+  margin-left: 115px;
+  gap: 20px;
+  padding: 80px;
+}
+.exe h3{
+  font-weight: 100;
+  font-size: 1.8em;
+}
+.exe p{
+  font-weight: 100;
+}
+.fifth-sec{
+  display: flex;
+  padding-left:80px;
+
+}
+.fifth-sec .footer-box-content{
+  margin: 50px;
+}
+.fifth-sec .footer-box-content h3{
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.fifth-sec .footer-box-content h5{
+  font-weight: 400;
+  color: #25242482;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.fifth-sec .footer-box-content form [type="E-mail"]{
+  width: 200px;
+  height: 40px;
+  border: 1px solid #4f4f4f;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 2px 15px;
+}
+.fifth-sec .footer-box-content form [type="button"]{
+  width: 200px;
+  height: 40px;
+  background-color: #4daaf2;
+  color: #ffffff;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+}
+
+.sixth-sec{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+} 
+.sixth-sec .logo-ftr{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px 0;
+}
+.sixth-sec .social-ftr ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  font-size: 2em;
+}
+
+
+
+
+
