@@ -17,6 +17,7 @@
       margin: 50px;
       background-color: aqua;
       position: relative;
+      overflow: hidden;
     }
     .ball{
       width: 50px;
@@ -25,12 +26,12 @@
       position: absolute;
       bottom: 0;
       border-radius: 50%;
-      animation: bounceArc 15s linear infinite;
+      animation: bounceArc 10s linear infinite;
     }
 
     @keyframes bounceArc {
       0% {
-        transform: translate(0, 0); 
+        transform: translate(-5vw, 0); 
       }
       10% {
         transform: translate(10vw, -70vh);
@@ -60,7 +61,7 @@
         transform: translate(85vw, -30vh); 
       }
       100%{
-        transform: translate(85vw,0);
+        transform: translate(85vw,10vh);
       }
     }
   </style>
